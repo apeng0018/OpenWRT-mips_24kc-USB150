@@ -120,11 +120,11 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
         
-    - name: Deliver package
+    - name: Upload package directory
       uses: actions/upload-artifact@main
       with:
-        name: OpenWrt_package
-        path: ./artifact/package/
+        name: OpenWrt_package${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/package
         
     - name: Organize files
       id: organize
