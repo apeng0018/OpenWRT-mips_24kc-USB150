@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build openwrt_gl_6416
+name: Build openwrt_GL_6416
 
 on:
   repository_dispatch:
